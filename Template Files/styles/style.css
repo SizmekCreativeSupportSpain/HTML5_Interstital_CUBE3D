@@ -1,0 +1,102 @@
+/* Resets ------ */ 
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; } article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video { display: block; } a img {border: 0;} 
+
+body {
+	margin: 0;
+}
+button{
+	background-color: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+button:focus{
+	outline: none;
+}
+/* Resets ------ */ 
+
+
+#background-dimmer {
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.centered {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#ad {
+  	width: 480px;
+  	height: 360px;
+	-webkit-perspective: 750px;
+	   -moz-perspective: 750px;
+	        perspective: 750px;
+	-webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    outline: none;
+}
+#closeButton{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 999999;
+	width: 44px;
+	height: 44px;
+	background-image: url("../images/closeSVG.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
+}
+#cube{
+	position: absolute;
+  	width: 480px;
+  	height: 360px;
+	background-color: white;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	-webkit-transform: scale(.75) rotateY(0deg) translateZ(0px);
+	        transform: scale(.75) rotateY(0deg) translateZ(0px); 
+
+}
+.side{
+  display: block;
+  overflow: hidden;
+  border: #BACAE4 1px solid;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.side img{
+  pointer-events: none;
+}
+
+#side1{
+  -webkit-transform: rotateY(0deg) translateZ(240px);
+          transform: rotateY(0deg) translateZ(240px);
+}
+#side2{
+  -webkit-transform: rotateY(90deg) translateZ(240px);
+          transform: rotateY(90deg) translateZ(240px);
+}
+#side3{
+  -webkit-transform: rotateY(180deg) translateZ(240px);
+          transform: rotateY(180deg) translateZ(240px);
+}
+#side4{
+	-webkit-transform: rotateY(-90deg) translateZ(240px);
+	        transform: rotateY(-90deg) translateZ(240px);
+}
