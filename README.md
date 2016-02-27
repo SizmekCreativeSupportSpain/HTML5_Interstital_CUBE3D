@@ -2,4 +2,6 @@
 
 Esto es un ejemplo de un formato interstitial con efecto de cubo 3D montado utilizando workspaces;
 
+<a href="http://www.sizmek.es/eb/users/javiegido_/__TESTS/DEMO_Cubo3D/index.html"><img src="http://www.sizmek.es/eb/users/javiegido_/__Screenshots/verDemo.png" alt="Sizmek" width="165" height="44" /></a>
+
 ## Descripción
