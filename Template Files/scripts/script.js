@@ -17,13 +17,7 @@ function startAd() {
 	initializeCustomVariables();
 	addEventListeners();
 	expand();
-	if (is_touch_device() && adConfig.isDraggable) {
-		cubeDiv.addEventListener("touchstart",onTouchStartedDraggable);
-	}else if(is_touch_device()){
-		cubeDiv.addEventListener("touchstart",onTouchStarted);
-	}else{
-		cubeDiv.addEventListener("mousedown",onMouseDown);
-	}
+	
 }
 
 function initializeCustomVariables() {
@@ -50,6 +44,13 @@ function addEventListeners() {
 		var ad = document.getElementById("ad");
 		ad.addEventListener("mousedown", cancelAutoCollapse);
 		ad.addEventListener("touchstart", cancelAutoCollapse);
+	}
+	if (is_touch_device() && adConfig.isDraggable) {
+		cubeDiv.addEventListener("touchstart",onTouchStartedDraggable);
+	}else if(is_touch_device()){
+		cubeDiv.addEventListener("touchstart",onTouchStarted);
+	}else{
+		cubeDiv.addEventListener("mousedown",onMouseDown);
 	}
 }
 
