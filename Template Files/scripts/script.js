@@ -95,7 +95,7 @@ function onTouchStartedDraggable(e){
 }
 function onTouchMoveDraggable(e){
 	setSpinSpeed(0);
-	degree = Math.round(currentRotation+(e.changedTouches[0].clientX-initPosX)*90/320);
+	degree = Math.round(currentRotation+(e.changedTouches[0].clientX-initPosX)*90/480);
 
     cubeDiv.style.webkitTransform = "scale(0.75) rotateY("+degree+"deg) translateZ(0px)";
 	cubeDiv.style.transform = "scale(0.75) rotateY("+degree+"deg) translateZ(0px)";
@@ -103,7 +103,7 @@ function onTouchMoveDraggable(e){
 function onTouchEndedDraggable(e){
 	var diff = 0;
 	clearInterval(intervaloGiro);
-	degree = Math.round(currentRotation+(e.changedTouches[0].clientX-initPosX)*90/320);
+	degree = Math.round(currentRotation+(e.changedTouches[0].clientX-initPosX)*90/480);
 	
 	if(degree>initRotation){
 		while(degree%90!=0){
